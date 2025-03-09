@@ -8,12 +8,14 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false,
+      // Disable nodeIntegration for security purposes
+      nodeIntegration: false,
+      contextIsolation: true, // This is more secure
+      preload: path.join(__dirname, 'preload.js')  // Use preload.js if needed
     },
   });
 
-  // Load the specified URL
+  // Load the specified URL (or use loadFile for local assets)
   win.loadURL('https://feng37.fwh.is/React_Feng37_Bank/');
 }
 
