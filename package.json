@@ -1,0 +1,23 @@
+{
+  "name": "feng37",
+  "version": "1.0.0",
+  "description": "React Feng37 Bank",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^your-version",
+    "electron-builder": "^your-version"
+  },
+  "build": {
+    "appId": "com.feng37.react.bank",
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "path/to/your/icon.icns"
+    }
+  }
+}
