@@ -1,23 +1,24 @@
 {
-  "name": "feng37",
-  "version": "1.0.0",
-  "description": "React Feng37 Bank",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "dist": "electron-builder"
-  },
-  "devDependencies": {
-    "electron": "^22.0.0",
-    "electron-builder": "^24.13.3"
-  },
-  "build": {
-    "appId": "com.feng37.react.bank",
-    "mac": {
-      "target": [
-        "dmg"
-      ],
-      "icon": "path/to/your/icon.icns"
+    "name": "React-Feng37-Bank",
+    "version": "1.0.0",
+    "description": "React Feng37 Bank",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+    "devDependencies": {
+        "electron": "^25.0.0",
+        "electron-builder": "^24.0.0"
+    },
+    "build": {
+        "appId": "com.feng37.react.bank",
+        "win": {
+            "target": "portable",
+            "icon": "build/icon.ico"
+        },
+        "directories": {
+            "output": "dist"
+        }
     }
-  }
 }
